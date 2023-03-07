@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/main.css">
+</head>
+<body>  
+    <section class="product">
+        <div class="container">
+            <div class="omproduct">
+               <h1>TODO APP</h1>
+            
+            <label for="productName">TASKS:</label>
+            <input type="text" class="form-control" name="" 
+             id="productName"  required>
+
+          
+
+            <button onclick="addProduct()" 
+            class="btn btn-info mt-3">add task</button>
+           
+            <button  onclick="deleteAll()"
+            class="btn btn-danger mt-3">Delete All</button>
+
+            <input type="text" onkeyup="searchProduct(this.value)" name="" class="w-50 form-control mx-auto my-5" 
+            id="search" placeholder="search product....">
+
+            <table class="table mt-5 text-center table-bordered">
+                <thead class="bg-dark text-white">
+                    <th>ID</th>
+                    <th>Name</th>
+                   
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </thead>
+                <tbody id="tBody">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        </div>
+    </section>
+ 
+
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/popper.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
